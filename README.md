@@ -6,7 +6,7 @@
 $ cd code
 $ mvn archetype:generate -DgroupId=xyz.javaneverdie.calculator -DartifactId=calculatorwebapp -DarchetypeGroupId=org.glassfish.jersey.archetypes -DarchetypeArtifactId=jersey-quickstart-webapp -DarchetypeVersion=3.1.0 -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
 ```
->注意：经过查询 https://mvnrepository.com/ 发现 jersey-quickstart-webapp 属于 org.glassfish.jersey.archetypes，而且最新版本是 3.1.0
+>注意：经过查询 https://mvnrepository.com/ 发现 jersey-quickstart-webapp 属于 org.glassfish.jersey.archetypes，而且最新版本是 3.1.0 (2022-11-19 更新)
 
 ## 2. Modify pom.xml
 
