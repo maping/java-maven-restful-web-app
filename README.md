@@ -168,3 +168,7 @@ $ git branch -M main
 $ git remote add origin https://github.com/maping/java-maven-restful-web-app.git
 $ git push -u origin main
 ```
+
+## 参考
+- [Integration Testing with Maven](https://www.baeldung.com/maven-integration-test)
+- [Creating a RESTful Web Service From Maven Archetype](https://docs.oracle.com/cd/E19226-01/820-7627/giqdq/)
