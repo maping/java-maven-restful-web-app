@@ -11,7 +11,7 @@ $ mvn archetype:generate -DgroupId=xyz.javaneverdie.calculator -DartifactId=calc
 ## 2. Modify pom.xml
 
 ### 2.1 增加源代码编码和 java compile 版本属性设定
-```code
+```xml
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
@@ -22,7 +22,7 @@ $ mvn archetype:generate -DgroupId=xyz.javaneverdie.calculator -DartifactId=calc
 
 ### 2.2 增加 jersey-media-json-binding 依赖
 使用 jersey-media-json-binding 解析 JSON 返回值
-```code
+```xml
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-json-binding</artifactId>
@@ -31,7 +31,7 @@ $ mvn archetype:generate -DgroupId=xyz.javaneverdie.calculator -DartifactId=calc
 
 ### 2.3 增加 httpclient 依赖 
 使用 httpclient 做集成测试
-```code
+```xml
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
@@ -40,18 +40,9 @@ $ mvn archetype:generate -DgroupId=xyz.javaneverdie.calculator -DartifactId=calc
         </dependency>       
 ```
 
-### 2.4 增加 jersey-media-json-binding 依赖
-使用 jersey-media-json-binding 解析 JSON 返回值
-```code
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-binding</artifactId>
-        </dependency>
-```
-
-### 2.5 增加 jetty-maven-plugin  
+### 2.4 增加 jetty-maven-plugin  
 使用 jetty-maven-plugin 启动内嵌的 Jetty Server，部署项目 war 包，准备用于集成测试
-```code
+```xml
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
@@ -92,9 +83,9 @@ $ mvn archetype:generate -DgroupId=xyz.javaneverdie.calculator -DartifactId=calc
 ```
 可以运行 `mvn jetty:run` 手动启动 Jetty Server，然后访问 http://localhost:9999，发现 calculator 应用已经自动部署了。
 
-### 2.6 增加 maven-surefire-plugin  
+### 2.5 增加 maven-surefire-plugin  
 使用 maven-surefire-plugin 做集成测试
-```code
+```xml
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
