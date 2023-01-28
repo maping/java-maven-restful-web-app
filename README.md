@@ -81,7 +81,7 @@ $ mvn archetype:generate -DgroupId=xyz.javaneverdie.calculator -DartifactId=calc
                 </executions>
             </plugin>
 ```
-可以运行 `mvn jetty:run` 手动启动 Jetty Server，然后访问 http://localhost:9999，发现 calculator 应用已经自动部署了。
+也可以运行 `mvn jetty:run` 手动启动 Jetty Server，然后访问 http://localhost:9999，发现 calculator 应用已经自动部署了。
 
 ### 2.5 增加 maven-surefire-plugin  
 使用 maven-surefire-plugin 做集成测试
